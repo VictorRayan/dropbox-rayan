@@ -13,7 +13,7 @@ class getEnvDropboxTokens{
 
     public function app_secret(){
 
-        $app_secret = $_ENV['DROPBOX_APP_KEY'];
+        $app_secret = $_ENV['DROPBOX_APP_SECRET'];
         return $app_secret;
     }
 
