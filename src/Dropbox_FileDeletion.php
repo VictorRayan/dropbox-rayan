@@ -28,7 +28,7 @@ class Dropbox_FileDeletion{
 		}
 		curl_close($ch);
 
-        if(!$result==null && json_encode($result)){
+        if(!$result==null && json_decode($result)){
             return true;
         }
         else{

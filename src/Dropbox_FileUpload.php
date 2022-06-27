@@ -29,7 +29,7 @@ class Dropbox_FileUpload{
 		curl_close($ch);
 		fclose($fp);
 
-        if(!$response==null && json_encode($response)){
+        if(!$response==null && json_decode($response)){
             return $full_filepath;
         }
         else{

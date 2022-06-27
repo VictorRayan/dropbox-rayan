@@ -28,7 +28,7 @@ class Dropbox_OAuthAccessToken{
         }
         curl_close($ch);
 
-        $results_json = json_encode($result, true);
+        $results_json = json_decode($result, true);
     
         $access_token = $results_json['access_token'];
 
