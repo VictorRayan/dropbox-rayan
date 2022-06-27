@@ -10,7 +10,7 @@ class Dropbox_FileUpload{
 		$fp = fopen($filepath_origin, 'rb');
 		$size = filesize($filepath_origin);
         $extension = pathinfo($filepath_origin, PATHINFO_EXTENSION);
-        $full_filepath = "/".hash('sha256',hash_file('sha256', $filepath_origin).$filepath_origin).".$extension";
+        $full_filepath = $filepath_dest.hash('sha256',hash_file('sha256', $filepath_origin).$filepath_origin).".$extension";
 
 
 
